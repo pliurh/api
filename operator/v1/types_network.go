@@ -130,6 +130,10 @@ type NetworkMigration struct {
 	// supported features.
 	// +optional
 	Features *FeaturesMigration `json:"features,omitempty"`
+
+	// isLive indicates if it's a live migration.
+	// +optional
+	IsLive bool `json:"isLive,omitempty"`
 }
 
 type FeaturesMigration struct {

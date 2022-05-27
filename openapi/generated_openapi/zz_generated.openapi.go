@@ -41647,6 +41647,13 @@ func schema_openshift_api_operator_v1_NetworkMigration(ref common.ReferenceCallb
 							Ref:         ref("github.com/openshift/api/operator/v1.FeaturesMigration"),
 						},
 					},
+					"isLive": {
+						SchemaProps: spec.SchemaProps{
+							Description: "isLive indicates if it's a live migration.",
+							Type:        []string{"boolean"},
+							Format:      "",
+						},
+					},
 				},
 			},
 		},

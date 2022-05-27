@@ -24358,6 +24358,10 @@
           "description": "features contains the features migration configuration. Set this to migrate feature configuration when changing the cluster default network provider. if unset, the default operation is to migrate all the configuration of supported features.",
           "$ref": "#/definitions/com.github.openshift.api.operator.v1.FeaturesMigration"
         },
+        "isLive": {
+          "description": "isLive indicates if it's a live migration.",
+          "type": "boolean"
+        },
         "mtu": {
           "description": "mtu contains the MTU migration configuration. Set this to allow changing the MTU values for the default network. If unset, the operation of changing the MTU for the default network will be rejected.",
           "$ref": "#/definitions/com.github.openshift.api.operator.v1.MTUMigration"
